@@ -1,8 +1,11 @@
 FROM centos:latest
 MAINTAINER github.com/blindly
 
-# Install wget and tar
+# Install wget
 RUN yum install wget -y
+
+# Install Python SetupTools
+RUN yum install python-setuptools -y
 
 # Download Hatta Wiki
 RUN mkdir /hatta
